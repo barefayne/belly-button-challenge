@@ -27,7 +27,7 @@ function buildMetadata(selected) {
     }
   });
 }
-// Function that builds charts
+// Function that build charts
 function buildChart(selected) {
   d3.json(url).then(function (data) {
     console.log(data);
