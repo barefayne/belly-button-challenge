@@ -115,13 +115,17 @@ function init() {
     names.forEach((id) => {
       dropdownMenu.append("option").text(id).property("value", id);
     });
+
   });
+  buildMetadata(selectedValue = 940);
+  buildChart(selectedValue = 940);
 }
 // Function that updates dashboard when selection is changed
 function optionChanged(selectedValue) {
   console.log(selectedValue);
   buildMetadata(selectedValue);
   buildChart(selectedValue);
+
 }
 
 init();
